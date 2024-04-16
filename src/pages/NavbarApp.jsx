@@ -5,10 +5,10 @@ import Contact from "./Contact";
 
 function NavbarApp() {
   return (
-    <Navbar fluid className="bg-gray-200">
+    <Navbar container fluid className=" bg-gray-400 dark:bg-gray-700">
       <Navbar.Brand href="#">
         <img
-          src="../images/website-logo-sample.png"
+          src="public/images/house.png"
           className="mr-3 h-6 sm:h-9"
           alt="Logo"
         />
@@ -17,7 +17,7 @@ function NavbarApp() {
         <DarkThemeToggle />
 
         <Button>
-          <Link to="../Contact.jsx">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </Button>
 
         <Navbar.Toggle />
@@ -28,7 +28,7 @@ function NavbarApp() {
         </Navbar.Link>
 
         <Navbar.Link>
-          <Link to="../Portfolio.jsx">Portfolio</Link>
+          <Link to="/portfolio">Portfolio</Link>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>

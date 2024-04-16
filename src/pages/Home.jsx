@@ -5,7 +5,7 @@ import { Button } from "flowbite-react";
 const Home = () => {
   return (
     <>
-      <section class="bg-green-200 dark:bg-gray-900">
+      <section class="bg-gray-200 dark:bg-gray-900">
         <div class="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
           <div class="mr-auto place-self-center lg:col-span-7">
             <h1 class="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
@@ -16,10 +16,10 @@ const Home = () => {
               projects!
             </p>
             {/* <Button gradientDuoTone="tealToLime">Teal to Lime</Button> */}
-            <Link to="Portfolio.jsx">
+            <Link to="portfolio">
               <a
                 class="
-              focus:ring-primary-300 
+              focus:ring-primary-300 x
               dark:focus:ring-primary-900 
               text-gray 
               dark: 
@@ -56,7 +56,7 @@ const Home = () => {
                 </svg>
               </a>
             </Link>
-            <Link to="../src/pages/Contact.jsx">
+            <Link to="contact">
               <a
                 href="#"
                 class="
@@ -85,7 +85,7 @@ const Home = () => {
             </Link>
           </div>
           <div class="hidden lg:col-span-5 lg:mt-0 lg:flex">
-            <img src="/images/programming.jpg" alt="prog" />
+            <img src="public/images/programming.jpg" alt="prog" />
           </div>
         </div>
       </section>
@@ -94,11 +94,11 @@ const Home = () => {
         className="
       lg:py-13
       dark: lg:px-42
-      bg-slate-100
-      px-8
+      bg-gray-300
+      px-8 
       py-6 
-      text-center 
-      dark:bg-slate-800
+      text-center
+      dark:bg-gray-800
       md:px-40 
       md:py-12 
       lg:py-14 
@@ -138,21 +138,27 @@ const Home = () => {
           2xl:text-3xl 
           2xl:leading-relaxed"
         >
-          Below you can see some examples of my recent work. Check out my
-          complete portfolio of
-          <a
-            href="#"
-            class="font-medium text-blue-600 underline underline-offset-4 hover:text-blue-500 hover:underline"
-          >
-            web design projects.
-          </a>
+          I'm currently a Dorset Engenieer in Irleand for a whole semester and
+          after that I will continue my School in EPITA in Strasboug, France.
+          You can see my
+          <Link to="portfolio">
+            <a
+              href=""
+              class="font-medium text-blue-400 underline underline-offset-4 hover:text-blue-500 hover:underline"
+            >
+              web design projects.
+            </a>
+          </Link>
+          <br />
           Have a project you would like to discuss?
-          <a
-            href=""
-            class="font-medium text-blue-600 underline underline-offset-4 hover:text-blue-500 hover:underline"
-          >
-            Let's make something great together!
-          </a>
+          <Link to="contact">
+            <a
+              href=""
+              class="font-medium text-blue-400 underline underline-offset-4 hover:text-blue-500 hover:underline"
+            >
+              Let's make something great together!
+            </a>
+          </Link>
         </p>
       </section>
 
@@ -168,52 +174,7 @@ const Home = () => {
         lg:px-24 
         xl:px-32
         "
-      >
-        <Card
-          className="mx-auto max-w-sm"
-          imgAlt="Meaningful alt text for an image that is not purely decorative"
-          imgSrc="/images/project-fashion.jpg"
-        >
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
-          <Button>View project</Button>
-        </Card>
-
-        <Card
-          className="mx-auto max-w-sm"
-          imgAlt="Meaningful alt text for an image that is not purely decorative"
-          imgSrc="../images/project-fashion.jpg"
-        >
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
-          <Button>View project</Button>
-        </Card>
-
-        <Card
-          className="mx-auto max-w-sm"
-          imgAlt="Meaningful alt text for an image that is not purely decorative"
-          imgSrc="../images/project-fashion.jpg"
-        >
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
-          <Button>View project</Button>
-        </Card>
-      </section>
+      ></section>
     </>
   );
 };
